@@ -1,7 +1,7 @@
 function hexToRgbInt(hex) {
     hex = hex.replace('#', '');
     if (hex.length !== 6) {
-        throw new Error('Invalid hex color');
+        throw new Error('Invalid hex value');
     }
 
     const rgbInt = parseInt(hex, 16);
@@ -11,7 +11,7 @@ function hexToRgbInt(hex) {
 function hexToBgrInt(hex) {
     hex = hex.replace('#', '');
     if (hex.length !== 6) {
-        throw new Error('Invalid hex color');
+        throw new Error('Invalid hex value');
     }
 
     const rgbInt = parseInt(hex, 16);
